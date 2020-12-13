@@ -1,0 +1,71 @@
+.bottom_group {
+    width: 100%;
+    display: flex;
+    /*background-color: #212121;*/
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0), #141414);
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.bottom_bar {
+    margin-top: 10px;
+    justify-content: space-evenly;
+    display: flex;
+    width: 360px;
+    height: 72px;
+    border-radius: 18px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.18);
+    border: solid 1px rgba(255, 255, 255, 0.12);
+    background-color: #1D1C1C;
+}
+
+.icon_group_unselected {
+    position: relative;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #858383;
+}
+
+.icon_group_unselected:hover {
+    color: #E3E3E3;
+    cursor: pointer;
+}
+
+.icon_group_selected {
+    composes: icon_group_unselected;
+    color: #a667f3;
+}
+
+.icon_group_selected:hover {
+    color: #a667f3;
+    cursor: initial;
+}
+
+.icon_text {
+    padding-top: 2px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.notification_dot {
+    z-index: 100;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    border: 2px solid #1D1C1C;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+}
